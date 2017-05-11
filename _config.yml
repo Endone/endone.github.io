@@ -9,7 +9,7 @@ name: Jacky Zhao
 description: Game Player and Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/jacky_zhao.jpg
+avatar: https://avatars3.githubusercontent.com/u/3828132?v=3&u=00666f44d47c8ea8b130b405db0a1dfdeaef31a6&s=400
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: /images/jacky_zhao.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:jjzhaogame@163.com
+  email:
   facebook:www.facebook.com/jjzhaozju
   flickr:
   github: https://github.com/Endone
