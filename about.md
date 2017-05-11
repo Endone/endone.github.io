@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I graduated from Zhejiang University in 2016 April with master's degree in Computer Science.
-My work at the lab is about E-commerce, web design with Java EE, research about NLP and recommendation algorithm.
-I got my first job in Netease as a game server-side developer and I am working at Netease now.
+* I graduated from Zhejiang University in 2016 April with master's degree in Computer Science.
+* My work at the lab is about E-commerce, web design with Java EE, research about NLP and recommendation algorithm.
+* I got my first job in Netease as a game server-side developer and I am working at Netease now.
 
 ### More Information
 
@@ -14,5 +14,5 @@ I got my first job in Netease as a game server-side developer and I am working a
 
 ### Contact me
 
-[jjzhaogame@163.com](mailto:jjzhaogame@163.com)
-[Facebook](facebook.com/jjzhaozju)
+* [jjzhaogame@163.com](mailto:jjzhaogame@163.com)
+* [Facebook](http://facebook.com/jjzhaozju)
