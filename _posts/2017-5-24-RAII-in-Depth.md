@@ -35,3 +35,22 @@ manager->parse();
 通过代码可以看出来，C++中实现RAII的方法很简单：
 * 将资源类化，即将资源包装为一个类中，并通过指针的形式来定位资源；
 * 在构造函数中初始化资源，在析构函数(对象出作用域的时候)中释放资源；
+
+另外，在内存管理被托管的语言如Java、C#中RAII依然是非常好用的，如Java，我们可能已经习惯了try...catch...finally三段式来保证资源的释放：
+```Java
+File file
+try{
+	file = new File(path);
+}catch(Exception e){
+	//
+}finally{
+	file.close();
+}
+```
+但在1.7之后，更方便的形式是：
+```Java
+try(File file = new File(path)){
+	perform(file);
+}
+```
+同时C#中也有类似try的功能的using语法，这些语法糖都是对RAII的使用。
