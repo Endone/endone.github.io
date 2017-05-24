@@ -9,14 +9,14 @@ Resource Acquisition Is Initilization的字面意思是“资源的获取即初�
 * 代码逻辑更明确，可以将异常处理和资源释放分离开，提高可读性；
 看例子：
 * 非RAII
-`
+```C++
 FileResourceHandle* handler = createFileResourceHandler(path);
 handler.parse();
 ......
 deleteFileResource(handler);
-`
+```
 问题是在create和delete之间如果有任何异常，资源将不能得到释放，而且C++中并没有finally可以在异常的情况下保证资源的释放，所以就有了RAII：
-`
+```C++
 class FileResourceHandlerManager{
 public:
 	FileResourceHandlerManager(FileResourceHandle* handler):handler_(handler){}
@@ -30,7 +30,7 @@ private:
 FileResourceHandleManager manager(createFileResourceHandler(path));
 manager->parse();
 ......
-`
+```
 通过代码可以看出来，C++中实现RAII的方法很简单：
 * 将资源类化，即将资源包装为一个类中，并通过指针的形式来定位资源；
 * 在构造函数中初始化资源，在析构函数(对象出作用域的时候)中释放资源；
