@@ -16,6 +16,7 @@ handler.parse();
 deleteFileResource(handler);
 ```
 问题是在create和delete之间如果有任何异常，资源将不能得到释放，而且C++中并没有finally可以在异常的情况下保证资源的释放，所以就有了RAII：
+
 ```C++
 class FileResourceHandlerManager{
 public:
